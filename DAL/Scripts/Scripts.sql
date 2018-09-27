@@ -1,3 +1,4 @@
+
 create database PrimerParcialAP2
 go
 use PrimerParcialAP2
@@ -19,3 +20,8 @@ CuentaId int not null,
 Concepto varchar(max),
 Monto money
 );
+
+select * from Cuentas
+select * from Depositos
+
+

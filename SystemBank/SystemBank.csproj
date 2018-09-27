@@ -73,17 +73,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\.DS_Store" />
+    <Content Include="Content\css\all.css" />
     <Content Include="Content\css\bootstrap-grid.css.map" />
     <Content Include="Content\css\bootstrap-grid.min.css.map" />
     <Content Include="Content\css\bootstrap-reboot.css.map" />
     <Content Include="Content\css\bootstrap-reboot.min.css.map" />
     <Content Include="Content\css\bootstrap.css.map" />
     <Content Include="Content\css\bootstrap.min.css.map" />
+    <Content Include="Content\css\toastr.css" />
     <Content Include="Content\js\bootstrap.bundle.js.map" />
     <Content Include="Content\js\bootstrap.bundle.min.js.map" />
     <Content Include="Content\js\bootstrap.js.map" />
     <Content Include="Content\js\bootstrap.min.js.map" />
     <None Include="packages.config" />
+    <Content Include="Content\js\jquery-3.3.1.min.js" />
+    <Content Include="Content\js\jquery-3.3.1.slim.min.js" />
+    <Content Include="Content\js\popper.min.js" />
+    <Content Include="Content\js\toastr.js" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -104,6 +110,8 @@
     <Content Include="Content\js\bootstrap.js" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Home.aspx" />
+    <Content Include="UI\Consultas\cCuentas.aspx" />
+    <Content Include="UI\Consultas\cDepositos.aspx" />
     <Content Include="UI\Registros\rCuentas.aspx" />
     <Content Include="UI\Registros\rDepositos.aspx" />
     <Content Include="Web.config" />
@@ -124,6 +132,20 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="UI\Consultas\cCuentas.aspx.cs">
+      <DependentUpon>cCuentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\cCuentas.aspx.designer.cs">
+      <DependentUpon>cCuentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Consultas\cDepositos.aspx.cs">
+      <DependentUpon>cDepositos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\cDepositos.aspx.designer.cs">
+      <DependentUpon>cDepositos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Registros\rCuentas.aspx.cs">
       <DependentUpon>rCuentas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -138,10 +160,9 @@
     <Compile Include="UI\Registros\rDepositos.aspx.designer.cs">
       <DependentUpon>rDepositos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Utilitary\Utild.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UI\Consultas\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{ac14e3ee-7a2a-4399-b2da-869f360286b0}</Project>
